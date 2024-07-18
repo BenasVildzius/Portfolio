@@ -1,0 +1,76 @@
+{
+    "skills": [
+        {
+            "id" : "1",
+            "src" : "../img/product-chain-1.png",
+            "title" : "Front-End",
+            "description" : "I have considerable experience working on Front-End design through my personal projects. Although these projects were not completed in a professional environment, I believe Front-End design is one of my strong suits."
+        },
+        {
+            "id" : "2",
+            "src" : "../img/tag-1.png",
+            "title" : "Back-End",
+            "description" : "I am quite proficient in Back-End development, which complements my skills as a FullStack developer. I have a solid understanding of the basics of Back-End development. In my personal projects, I have implemented complex logic and code, further enhancing my proficiency."
+        },
+        {
+            "id" : "3",
+            "src" : "../img/feather-pen-2.png",
+            "title" : "UI & UX design",
+            "description" : "I am very interested in UI & UX design and have dedicated many personal hours to researching and becoming knowledgeable in this field. I believe my designs are modern and well-structured, and my user experience work has received positive feedback, with no complaints so far."
+        }
+    ],
+
+    "portfolio": [
+        {
+            "id" : "1",
+            "src" : "../img/placeholder-image.png",
+            "title" : "Ahuse",
+            "description" : "lorem ipsum dolor sit amet, consectetur adopiscing elit. Suspendis varius enim in eros elementum tristique",
+            "link": "View in github"
+        },
+        {
+            "id" : "2",
+            "src" : "../img/placeholder-image-1.png",
+            "title" : "App Dashboard",
+            "description" : "lorem ipsum dolor sit amet, consectetur adopiscing elit. Suspendis varius enim in eros elementum tristique",
+            "link": "View in github"
+        },
+        {
+            "id" : "3",
+            "src" : "../img/placeholder-image-2.png",
+            "title" : "Easy Rent",
+            "description" : "lorem ipsum dolor sit amet, consectetur adopiscing elit. Suspendis varius enim in eros elementum tristique",
+            "link": "View in github"
+        }
+    ],
+
+    "testimonial": [
+        {
+            "id" : "1",
+            "count": "5",
+            "src" : "../img/avatar-image.png",
+            "title" : "Ahuse",
+            "description" : "lorem ipsum dolor sit amet, consectetur adopiscing elit. Suspendis varius enim in eros elementum tristique",
+            "author_name": "Diane Russel",
+            "author_designation": "Starbucks"
+        },
+        {
+            "id" : "2",
+            "count": "5",
+            "src" : "../img/avatar-image-1.png",
+            "title" : "Ahuse",
+            "description" : "lorem ipsum dolor sit amet, consectetur adopiscing elit. Suspendis varius enim in eros elementum tristique",
+            "author_name": "Kristne Watson",
+            "author_designation": "Louis Vuitton"
+        },
+        {
+            "id" : "3",
+            "count": "5",
+            "src" : "../img/avatar-image-2.png",
+            "title" : "Ahuse",
+            "description" : "lorem ipsum dolor sit amet, consectetur adopiscing elit. Suspendis varius enim in eros elementum tristique",
+            "author_name": "Kathryn Murphy",
+            "author_designation": "McDonalds"
+        }
+    ]
+}
