@@ -38,4 +38,8 @@
   .navbar--active-content{
     color: var(--primary);
   }
+
+  .navbar--logo{
+    height: 50px;
+  }
   /* Navbar Style end */

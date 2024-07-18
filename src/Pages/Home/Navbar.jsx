@@ -40,7 +40,7 @@ function Navbar(){
     return <nav className={`navbar ${navActive ? "active" : ""}`}>
     
         <div>
-            <img src="./img/logo.png" alt="logoipsum" />
+            <img className="navbar--logo" src="./img/react-2.svg" alt="logoipsum" />
         </div>
         <a className={`nav__hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
             <span className="nav__hamburger__line">
