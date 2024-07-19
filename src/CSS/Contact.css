@@ -72,8 +72,3 @@ input[type="checkbox"]{
     transform: translate(-0.075em);
 }
 /* Contact style end */
-
-.warning{
-    font-size: 40px;
-    color: red;
-}

@@ -1,51 +1,82 @@
+import React, {useState} from "react";
+import emailjs from '@emailjs/browser';
+
 export default function ContactMe(){
+    
+    const [name, setName] = useState();
+    const [lname, setLName] = useState();
+    const [phone, setPhone] = useState();
+    const [email, setEmail] = useState();
+    const [message, setMessage] = useState();
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        //Your emailjs serviceID, templateId and public key
+        const serviceId = 'service_07bcq7n';
+        const templateId = 'template_spbi5ff';
+        const publicKey = 'Ou2_RCV_HFFSPeXaD';
+
+        //create a new object that contains dynamic template params
+        const templateParams = {
+            from_name: name,
+            from_lname: lname,
+            from_number: phone,
+            from_email: email,
+            to_name : 'Benas Vildžius',
+            message: message,
+        }
+
+        //send the email using emailjs
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
+            .then((response) => {
+                console.log('Email sent successfully!', response);
+                alert("Email has been sent!")
+                setName('');
+                setLName('');
+                setPhone('');
+                setEmail('');
+                setMessage('');
+            })
+            .catch((error) => {
+                console.log("Something went wrong!",(error))
+                alert("Something went wrong :( Check your inputs or contact me via email benassvildzius@gmail.com")
+            })
+
+    }
+
     return <section id="Contact" className="contact--section">
         <div>
             <p className="sub--title">Get in Touch</p>
             <h2>Contact Me</h2>
-            <p className="text-lg warning">NOT WORKING CURRENTLY</p>
-            <p className="text-lg">But my social media iconst work and the "get in touch" buton works.</p>
         </div>
-        <form className="contact--form--container">
-            <div className="container">
-                <label htmlFor="first-name" className="contact--label">
-                    <span className="text-md">First Name</span>
-                    <input type="text" className="contact--input text-md" name="first-name" id="first-name" required/>
+            <form  onSubmit={handleSubmit} className="contact--form--container">
+                <div className="container">
+                    <label htmlFor="first-name" className="contact--label">
+                        <span className="text-md">First Name</span>
+                        <input value={name} onChange={(e) => setName(e.target.value)} type="text" className="contact--input text-md" name="first-name" id="first-name" required/>
+                    </label>
+                    <label htmlFor="last-name" className="contact--label">
+                        <span className="text-md">Last Name</span>
+                        <input value={lname} onChange={(e) => setLName(e.target.value)}type="text" className="contact--input text-md" name="last-name" id="last-name" required/>
+                    </label>
+                    <label htmlFor="email" className="contact--label">
+                        <span className="text-md">Email</span>
+                        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" className="contact--input text-md" name="email" id="email" required/>
+                    </label>
+                    <label htmlFor="phone-number" className="contact--label">
+                        <span className="text-md">Phone Number</span>
+                        <input value={phone} onChange={(e) => setPhone(e.target.value)} type="number" className="contact--input text-md" name="phone-number" id="phone-number" required/>
+                    </label>
+                </div>
+                <label htmlFor="message" className="contact--label">
+                    <span className="text-md">Message</span>
+                    <textarea value={message} onChange={(e) => setMessage(e.target.value)}  className="contact--input text-md" id="message" rows="8" placeholder="Type your message..."/>
                 </label>
-                <label htmlFor="last-name" className="contact--label">
-                    <span className="text-md">Last Name</span>
-                    <input type="text" className="contact--input text-md" name="last-name" id="last-name" required/>
-                </label>
-                <label htmlFor="email" className="contact--label">
-                    <span className="text-md">Email</span>
-                    <input type="email" className="contact--input text-md" name="email" id="email" required/>
-                </label>
-                <label htmlFor="phone-number" className="contact--label">
-                    <span className="text-md">Phone Number</span>
-                    <input type="number" className="contact--input text-md" name="phone-number" id="phone-number" required/>
-                </label>
-            </div>
-            <label htmlFor="choose-topic" className="contact--label">
-                <span className="text-md">Choose a topic</span>
-                <select id="choose-topic" className="contact--input text-md">
-                    <option> Select One.</option>
-                    <option> Item 1 </option>
-                    <option> Item 2 </option>
-                    <option> Item 3 </option>
-                    <option> Item 4 </option>
-                </select>
-            </label>
-            <label htmlFor="message" className="contact--label">
-                <span className="text-md">Message</span>
-                <textarea className="contact--input text-md" id="message" rows="8" placeholder="Type your message..."/>
-            </label>
-            <label htmlFor="checkbox" className="checkbox--label">
-                <input type="checkbox" required name="checkbox" id="checkbox"/>
-                <span className="text-sm">I accept the terms</span>
-            </label>
-            <div>
-                <button className="btn btn-primary contact--form-btn">Submit</button>
-            </div>
-        </form>
+                <div>
+                    <button className="btn btn-primary contact--form-btn">Submit</button>
+                </div>
+            </form>
+
     </section>
 }

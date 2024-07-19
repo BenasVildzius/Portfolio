@@ -40,6 +40,7 @@
   }
 
   .navbar--logo{
-    height: 50px;
+    height: 3rem;
+    object-fit: contain;
   }
   /* Navbar Style end */

@@ -18,7 +18,7 @@ export default function HeroSection() {
                         I am a motivated FullStack developer with a passion for creating web applications. I enjoy working on both the design and the BackEnd aspects of development.
                     </p>
                 </div>
-                <a className="btn btn-primary" href="mailto:benassvildzius@gmail.com">Get in Touch</a>
+                <a className="btn btn-primary" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/benas-vild%C5%BEius-23438a258/">Get In Touch</a>
             </div>
             <div className="hero--section--img">
                 <img src="./img/hero-img.png" alt="Hero Section" />
