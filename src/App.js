@@ -13,8 +13,6 @@ import Navbar from './Pages/Home/Navbar';
 import Home from './Pages/Home/Homescreen';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import AboutMe from './Pages/Home/AboutMe';
-import MyPortfolio from './Pages/Home/MyPortfolio';
-import Testimonials from './Pages/Home/Testimonials';
 
 
 
@@ -30,8 +28,6 @@ function App() {
                 404 not found
               </div>}></Route>
               <Route path='/' element={<AboutMe/>}></Route>
-              {/*<Route path='/' element={<MyPortfolio/>}></Route>
-              <Route path='/' element={<Testimonials/>}></Route>*/}
             </Route>
           </Routes>
         </div>

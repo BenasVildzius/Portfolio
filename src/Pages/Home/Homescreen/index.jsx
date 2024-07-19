@@ -2,8 +2,6 @@ import HeroSection from "../HeroSection";
 import React from "react";
 import MySkills from "../MySkills";
 import AboutMe from "../AboutMe";
-import MyPortfolio from "../MyPortfolio";
-import Testimonial from "../Testimonials";
 import ContactMe from "../ContactMe";
 import Footer from "../Foorter";
 
@@ -14,8 +12,6 @@ export default function Home(){
             <HeroSection/>
             <MySkills/>
             <AboutMe/>
-            {/*<MyPortfolio/>
-            <Testimonial/>*/}
             <ContactMe/>
             <Footer/>
         </>
