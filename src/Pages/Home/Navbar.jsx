@@ -15,20 +15,7 @@ function Navbar(){
         setNavActive(false)
     }
 
-    useEffect(() =>{
-        const handleResize = () =>{
-            //If the window width less then or equal to 500, the the menu will be closed
-            if(window.innerWidth <= 500) {
-                closeMenu()
-            }
-
-            //Resizes the window
-            window.addEventListener("resize", handleResize)
-            return () =>{
-                window.removeEventListener("resize", handleResize);
-            }
-        }
-    }, []);
+s
 
     //if the window width is less or equal to 1200 then the menu closes
     useEffect(() => {
