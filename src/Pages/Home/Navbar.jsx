@@ -15,8 +15,6 @@ function Navbar(){
         setNavActive(false)
     }
 
-s
-
     //if the window width is less or equal to 1200 then the menu closes
     useEffect(() => {
         if(window.innerWidth <= 12000){
