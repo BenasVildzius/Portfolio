@@ -22,12 +22,26 @@ function Navbar(){
         }
     }, [])
 
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth <= 500) {
+            closeMenu();
+          }
+        };
+    
+        window.addEventListener("resize", handleResize);
+    
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, []);
+
     return <nav className={`navbar ${navActive ? "active" : ""}`}>
     
         <div>
             <img className="navbar--logo" src="./img/react-2.svg" alt="logoipsum" />
         </div>
-        <a href="#" className={`nav__hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
+        <p className={`nav__hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
             <span className="nav__hamburger__line">
 
             </span>
@@ -37,10 +51,7 @@ function Navbar(){
             <span className="nav__hamburger__line">
 
             </span>
-            <span className="nav__hamburger__line">
-            
-            </span>
-        </a>
+        </p>
         <div className={`navbar--items ${navActive ? "active" : ""}`}>
             <ul>
                 <li>
