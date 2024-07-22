@@ -164,7 +164,7 @@ function Footer() {
                 to="Privacy_Policy"
                 className="text-sm"
               >
-                Privacy Policy
+                
               </Link>
             </li>
             <li>
@@ -177,7 +177,7 @@ function Footer() {
                 to="Terms_of_Service"
                 className="text-sm"
               >
-                Terms of Service
+                
               </Link>
             </li>
             <li>
@@ -190,7 +190,7 @@ function Footer() {
                 to="Cookies_Settings"
                 className="text-sm"
               >
-                Cookies Settings
+                
               </Link>
             </li>
           </ul>

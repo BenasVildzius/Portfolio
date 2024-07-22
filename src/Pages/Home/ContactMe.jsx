@@ -1,8 +1,45 @@
 import React, {useState} from "react";
 import emailjs from '@emailjs/browser';
+import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { wait } from "@testing-library/user-event/dist/utils";
 
 export default function ContactMe(){
     
+    const successPopup = () => toast.success("Email sent successfuly", {
+        position: "bottom-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Slide,
+    });
+    const errorPopup = () => toast.error("An error has occured!", {
+        position: "bottom-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Slide,
+    });
+    const suggestion = () => toast.info("Use social media links! Located at the bottom",{
+        position: "bottom-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Slide,
+    });
+
     const [name, setName] = useState();
     const [lname, setLName] = useState();
     const [phone, setPhone] = useState();
@@ -11,7 +48,6 @@ export default function ContactMe(){
     
     const handleSubmit = (e) => {
         e.preventDefault();
-
         //Your emailjs serviceID, templateId and public key
         const serviceId = 'service_07bcq7n';
         const templateId = 'template_spbi5ff';
@@ -31,7 +67,7 @@ export default function ContactMe(){
         emailjs.send(serviceId, templateId, templateParams, publicKey)
             .then((response) => {
                 console.log('Email sent successfully!', response);
-                alert("Email has been sent!")
+                successPopup();
                 setName('');
                 setLName('');
                 setPhone('');
@@ -40,7 +76,8 @@ export default function ContactMe(){
             })
             .catch((error) => {
                 console.log("Something went wrong!",(error))
-                alert("Something went wrong :( Check your inputs or contact me via email benassvildzius@gmail.com")
+                errorPopup();
+                suggestion();
             })
 
     }
@@ -76,6 +113,7 @@ export default function ContactMe(){
                 <div>
                     <button className="btn btn-primary contact--form-btn">Submit</button>
                 </div>
+                <ToastContainer limit={1}/>
             </form>
 
     </section>
