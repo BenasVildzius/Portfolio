@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import emailjs from '@emailjs/browser';
 import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { wait } from "@testing-library/user-event/dist/utils";
 
 export default function ContactMe(){
     
