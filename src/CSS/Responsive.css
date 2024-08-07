@@ -77,8 +77,11 @@
     }
     .about--section {
       gap: 20px;
+<<<<<<< HEAD
       padding-top: 0;
       padding-bottom: 0;
+=======
+>>>>>>> d1c438f (New logo, about me edit)
     }
     .testimonial--section--card {
       padding: 25px;

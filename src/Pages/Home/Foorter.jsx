@@ -6,7 +6,11 @@ function Footer() {
     <footer className="footer--container">
       <div className="footer--link--container">
         <div>
+<<<<<<< HEAD
           <img className="navbar--logo" src="./img/logo-img1.svg" alt="Logoipsum" />
+=======
+          <img className="navbar--logo" src="./img/logo.svg" alt="Logoipsum" />
+>>>>>>> d1c438f (New logo, about me edit)
         </div>
         <div className="footer--items">
           <ul>

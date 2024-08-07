@@ -5,11 +5,19 @@
     align-items: center;
     padding: 15px 85.333px;
     background: var(--white);
+<<<<<<< HEAD
     box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+=======
+    box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.2);
+>>>>>>> d1c438f (New logo, about me edit)
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+<<<<<<< HEAD
+=======
+    z-index: 1;
+>>>>>>> d1c438f (New logo, about me edit)
   }
   
   .navbar--items > ul{

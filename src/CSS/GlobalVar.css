@@ -2,8 +2,22 @@
     --primary: #DF2935;
     --heading: #080708;
     --bg-shade: #E6E8E6;
+<<<<<<< HEAD
+=======
+    --bg-shade-darker: rgba(0, 0, 0, 0.5);
+>>>>>>> d1c438f (New logo, about me edit)
     --github: #000000;
     --darkblue: #000000;
     --black: #080708;
     --white: #E6E8E6;
+<<<<<<< HEAD
+=======
+    --html: #E34F26;
+    --css:#1572B6;
+    --js: #F7DF1E;
+    --react: #61DAFB;
+    --chatgpt: #10A37F;
+    --nodejs: #339933;
+    --npm: #CB3837;
+>>>>>>> d1c438f (New logo, about me edit)
   }
