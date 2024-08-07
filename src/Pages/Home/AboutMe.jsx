@@ -5,8 +5,8 @@ export default function AboutMe(){
     return(
         <section id="AboutMe" className="about--section">
             
-            <div className="hero--sectioni--content--box about--section--box">
-                <div className="hero--section--content--boutme">
+            <div className="hero--section--content--box about--section--box">
+                <div className="hero--section--content-boutme">
                     <h1 className="skills--section--heading">About Me</h1>
                     <h3>Who am I?</h3>
                     <p className="hero--section--description">

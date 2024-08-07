@@ -1,12 +1,5 @@
 /* About Me style start */
 .about--section {
-    display: grid;
-    padding: 133.3px 85.3px;
-    align-items: center;
-    gap: 114.6px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-.about--section {
     padding: 133.333px 85.333px 133.333px;
     align-items: center;
     gap: 114.6px;
@@ -49,6 +42,8 @@
 
 .chatgpt {
   color: var(--chatgpt);
+  font-style: bold;
+  font-weight: 700;
 }
 
 .nodejs {
@@ -61,15 +56,17 @@
 
 .github {
     color: var(--github);
+    font-style: bold;
+    font-weight: 700;
 }
 
-.hero--section--description svg {
-  margin-left: 5px;
-  vertical-align: middle;
+.hero--section--description-boutme svg {
   font-size: 1.2em;
+  stroke-width: black 2px;
+  padding-left: .5%;
 }
 
-.hero--section--description svg:hover {
+.hero--section--description-boutme svg:hover {
   transform: scale(1.2);
   transition: transform 0.2s ease-in-out;
 }
@@ -77,28 +74,24 @@
 .hero--section--description-boutme > ul{
     list-style: none;
     text-decoration: none;
+    padding: 1px;
 }
 
-.hero--section--description-boutme > ul{
+.hero--section--description-boutme > ul > li> p{
     text-decoration: none;
     cursor: default;
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119), var(--bg-shade) 70.2%);
-    width: 30%;
-    border-left: solid 4px rgb(32, 38, 57);
-    border-top: none;
-    border-right: none;
-    border-bottom:none;
-    border-radius: 10px;
-    padding: 1%;
+    filter: 
+    drop-shadow(-.5px -.5px 0px black) 
+    drop-shadow(1px -.5px 0px black) 
+    drop-shadow(1px 1px 0px black)
+    drop-shadow(-.5px 1px 0px black);
+    background: none;
+    font-size: 1.3rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.hero--section--content--boutme{
-    border: var(--primary) solid;
-    border-left: solid 2.7px;
-    border-bottom: solid 2px;
-    border-top: none;
-    border-right: none;
-    border-radius: 20px;
-    padding: 13.33px;
+.hero--section--description-boutme > ul > li{
+  padding: 0;
 }
 /* About Me style end */
