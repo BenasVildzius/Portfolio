@@ -3,7 +3,7 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import './CSS/FadeInSection.css'; // Make sure to import your CSS file
 
-const FadeInSection = ({ children, delay = 0 }) => {
+const FadeInSection = ({ children, delay = 0, direction = 'up' }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
@@ -16,7 +16,7 @@ const FadeInSection = ({ children, delay = 0 }) => {
   return (
     <div
       ref={ref}
-      className={`fade-in-section ${inView ? 'is-visible' : ''}`}
+      className={`fade-in-section ${inView ? 'is-visible' : ''} fade-${direction}`}
       style={style}
     >
       {children}

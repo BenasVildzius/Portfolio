@@ -1,5 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaNpm, FaGithub, FaRobot } from 'react-icons/fa';
 import React from 'react';
+import FadeInSection from "../../FadeInSection"
 
 export default function AboutMe(){
     return(
@@ -19,31 +20,39 @@ export default function AboutMe(){
                     
                 </div>
             </div>
-            <div className="about--section--skills">
-            <h4>Over time, I've honed my skills in:</h4>
-                    <ul>
-                        <li>
-                            <p><span className="html">HTML</span> <FaHtml5 className="html"/></p>
-                        </li>
-                        <li>
-                            <p><span className="css">CSS</span> <FaCss3Alt className="css"/></p>
-                        </li>
-                        <li>
-                            <p><span className="javascript">JavaScript</span> <FaJs className="javascript"/></p>
-                        </li>
-                    </ul>
-                    <h4>And I regularly leverage powerful libraries and frameworks such as:</h4>
-                    <ul>
-                        <li>
-                            <p><span className="react">React</span> <FaReact className="react"/></p>
-                        </li>
-                        <li>
-                            <p><span className="nodejs">Node.js</span> <FaNodeJs className="nodejs"/></p>
-                        </li>
-                        <li>
-                            <p><span className="npm">npm</span> <FaNpm className="npm"/></p>
-                        </li>
-                    </ul>
+            <div>
+                    <FadeInSection delay={.5} direction='right'>
+                    <div className="about--section--skills">
+                        <h4>Over time, I've honed my skills in:</h4>
+                        <ul>
+                            <li>
+                                <p><span className="html">HTML</span> <FaHtml5 className="html"/></p>
+                            </li>
+                            <li>
+                                <p><span className="css">CSS</span> <FaCss3Alt className="css"/></p>
+                            </li>
+                            <li>
+                                <p><span className="javascript">JavaScript</span> <FaJs className="javascript"/></p>
+                            </li>
+                        </ul>
+                    </div>
+                    </FadeInSection>
+                    <FadeInSection delay={1} direction='right'>
+                    <div className="about--section--skills">
+                        <h4>And I regularly leverage powerful libraries and frameworks such as:</h4>
+                        <ul>
+                            <li>
+                                <p><span className="react">React</span> <FaReact className="react"/></p>
+                            </li>
+                            <li>
+                                <p><span className="nodejs">Node.js</span> <FaNodeJs className="nodejs"/></p>
+                            </li>
+                            <li>
+                                <p><span className="npm">npm</span> <FaNpm className="npm"/></p>
+                            </li>
+                        </ul>
+                    </div>
+                    </FadeInSection>
             </div>
         </section>
     )

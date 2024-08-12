@@ -13,7 +13,7 @@ export default function MySkills(){
             </div>
                 <div className="skills--section--container">
                     {data?.skills?.map((item, index) => (
-                        <FadeInSection>
+                        <FadeInSection delay={index/2} direction="down">
                             <div key={index} className="skills--section--card">
                                 <div className="skills--section--img">
                                     <img src={item.src} alt="Product Chain"/>
