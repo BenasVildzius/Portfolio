@@ -2,7 +2,8 @@
     --primary: #DF2935;
     --heading: #080708;
     --bg-shade: #E6E8E6;
-    --bg-shade-darker: rgba(0, 0, 0, 0.5);
+    --bg-shade-darker: #cacaca;
+    --bg-shade-darkest: rgba(0, 0, 0, 0.5);
     --github: #000000;
     --darkblue: #000000;
     --black: #080708;
@@ -15,3 +16,40 @@
     --nodejs: #339933;
     --npm: #CB3837;
   }
+
+
+  .html {
+    color: var(--html);
+  }
+  
+  .css {
+    color: var(--css);
+  }
+  
+  .javascript {
+    color: var(--js);
+  }
+  
+  .react {
+    color: var(--react);
+  }
+  
+  .chatgpt {
+    color: var(--chatgpt);
+    font-style: bold;
+    font-weight: 700;
+  }
+  
+  .nodejs {
+    color: var(--nodejs);
+  }
+  
+  .npm {
+    color: var(--npm);
+  }
+
+.github {
+  color: var(--github);
+  font-style: bold;
+  font-weight: 700;
+}
