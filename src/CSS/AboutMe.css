@@ -32,13 +32,13 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.about--section--skills > ul{
+.about--section--skills{
     list-style: none;
     text-decoration: none;
     padding: 1px;
 }
 
-.about--section--skills > ul > li> p{
+.about--section--skills > p{
     text-decoration: none;
     cursor: default;
     filter: 

@@ -2,11 +2,14 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  visibility: hidden; /* Initially hide the element */
+  position: relative; /* Ensure it's positioned properly */
 }
 
 .fade-in-section.is-visible {
   opacity: 1;
   transform: translateY(0);
+  visibility: visible; /* Make it visible when in view */
 }
 
 /* Fade from the top */
@@ -38,7 +41,7 @@
 
 /* Fade from the right */
 .fade-in-section.fade-right {
-  transform: translateX(50%);
+  transform: translateX(10%); /* Adjusted to 50% for a smoother effect */
 }
 
 .fade-in-section.is-visible.fade-right {
